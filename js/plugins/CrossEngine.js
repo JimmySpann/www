@@ -573,14 +573,14 @@ Game_System.prototype.initialize = function() {
 	// and the default pose code to apply _idle will detect the right character name
 	//
 	this.crossEngine={};
-	var fs = require ("fs");
+	// var fs = require("fs");
 	//yanfly's doodads have a solution for path name changing when deployed
 	//which I am using!
-	var path = require('path');
-	var base = path.dirname(process.mainModule.filename);
+	// var path = require('path');
+	// var base = path.dirname(process.mainModule.filename);
 	//let dir = fs.readdirSync( './img/characters/' );
-	let dir = fs.readdirSync( path.join(base, '/img/characters/'));
-    this.crossEngine.characterNameList = dir.filter( elm => elm.match(new RegExp(`.*\.(png)`, 'ig')));
+	// let dir = fs.readdirSync( path.join(base, '/img/characters/'));
+    this.crossEngine.characterNameList = [] //dir.filter( elm => elm.match(new RegExp(`.*\.(png)`, 'ig')));
 	this.crossEngine.characterNameListLC=['hello world'];//this should never appear in game.
 	//slice off the .png extension
 	for (var index =0; index<this.crossEngine.characterNameList.length;index++)

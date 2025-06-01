@@ -1,0 +1,33 @@
+{
+    "type": "group",
+    "id": "menu_option_item",
+    "constants": {
+        "itemsIconsRadius": "154dp"
+    },
+    "bindings": {
+        "size": {
+            "width": "64dp",
+            "height": "64dp"
+        },
+        "anchor": 0.5
+    },
+    "childrens": [
+        {
+            "id": "menu_option_icon",
+            "type": "image",
+            "effects": ["shadow"],
+            "parameters": "folderName:pQuickMenu;",
+            "animations": [
+                "field:opacity;duration:0.15;delay:0.15;keyframes:0=0,100=255"
+            ],
+            "bindings": {
+                "size": {
+                    "width": "100%",
+                    "height": "100%"
+                },
+                "anchor": 0.5,
+                "opacity": 0
+            }
+        }
+    ]
+}

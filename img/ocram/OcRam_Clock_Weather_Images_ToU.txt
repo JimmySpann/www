@@ -1,0 +1,6 @@
+Image files included in this zip file (OcRam_Clock_Weather_Images.zip) are free to use in any type of project!
+...also no credits needed for using these image files
+
+UnZip files to .\img\ocram -folder!
+
+Happy RPG Making!

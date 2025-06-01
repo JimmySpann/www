@@ -1,0 +1,63 @@
+{
+    "type": "screen",
+    "constants": {
+        "segmentsCount": 6,
+        "segmentSelectionSE": "Cursor1"
+    },
+    "id": "radialMenuRoot",
+    "childrens": [{
+            "id": "sceneBackground",
+            "type": "image",
+            "parameters": "folderName:pQuickMenu;imageName:sceneBackground",
+            "animations": [
+                "field:opacity;duration:0.15;keyframes:0=0,100=255"
+            ],
+            "bindings": {
+                "size": {
+                    "width": "100%",
+                    "height": "100%"
+                }
+            }
+        },
+        {
+            "id": "radialMenuBackground",
+            "type": "image",
+            "effects": ["shadow"],
+            "parameters": "folderName:pQuickMenu;imageName:radialMenu",
+            "animations": [
+                "field:opacity;duration:0.15;delay:0.1;keyframes:0=0,100=240"
+            ],
+            "bindings": {
+                "size": {
+                    "width": "436dp",
+                    "height": "436dp"
+                },
+                "position": {
+                    "x": "center",
+                    "y": "center"
+                },
+                "visible": true,
+                "opacity": 0
+            },
+            "childrens": [{
+                "id": "menuOptionHintText",
+                "type": "text",
+                "parameters": {
+                    "multiline": true
+                },
+                "bindings": {
+                    "size": {
+                        "width": "50%",
+                        "height": "50%"
+                    },
+                    "position": {
+                        "x": "center",
+                        "y": "center"
+                    },
+                    "fontSize": "16hdp",
+                    "text": ["%1", "$hintText"]
+                }
+            }]
+        }
+    ]
+}

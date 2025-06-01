@@ -1,0 +1,35 @@
+{
+        "type": "screen",
+        "constants": {
+            "highlightMaxOpacity": 200
+        },
+        "id": "segment_root",
+        "childrens": [
+            {
+                "type": "group",
+                "id": "segment_group",
+                "bindings": {
+                    "size": {
+                        "width": "436dp",
+                        "height": "436dp"
+                    },
+                    "anchor": 0.5
+                },
+                "childrens": [
+                    {
+                        "id": "segment_highlight_image",
+                        "type": "image",
+                        "parameters": "folderName:pQuickMenu;imageName:radialMenuSelectedSegment",
+                        "bindings": {
+                            "size": {
+                                "width": "100%",
+                                "height": "100%"
+                            },
+                            "opacity": 255
+                        },
+                        "effects": ["tint;color:0xd6a531;alpha:0.4"]
+                    }
+                ]
+            }
+        ]
+    }

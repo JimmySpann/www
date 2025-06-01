@@ -1,0 +1,41 @@
+{
+    "type": "screen",
+    "id": "buttonRoot",
+    "bindings": {
+        "visible": "@!$gameMessage.isBusy() && !$gameSystem.pkdQuickMenuDisabled"
+    },
+    "childrens": [{
+        "type": "button",
+        "id": "button",
+        "effects": "shadow",
+        "parameters": {
+            "imageName": "button",
+            "margins": 10,
+            "folderName": "pQuickMenu",
+            "tint": "",
+            "overTint": "#587380",
+            "activeTint": "#2982ab"
+        },
+        "bindings": {
+            "position": {
+                "x": "right - 8",
+                "y": "bottom - 8"
+            },
+            "size": {
+                "width": "48hdp",
+                "height": "48hdp"
+            }
+        },
+        "childrens": [{
+            "type": "image",
+            "parameters": "imageName:buttonIcon;folderName:pQuickMenu",
+            "bindings": {
+                "size": {
+                    "width": "80%",
+                    "height": "80%"
+                },
+                "position": "center"
+            }
+        }]
+    }]
+}
